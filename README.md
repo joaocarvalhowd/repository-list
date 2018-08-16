@@ -1,27 +1,43 @@
 # RepositoryList
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
+> code challenge - [DEMO](http://banco-pan.joaocarvalhowd.com.br/)
 
-## Development server
+## Introduction
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project is a code challenge that has been developed with [Angular](https://angular.io/)
 
-## Code scaffolding
+The application is integrated with [Github API v3](https://developer.github.com/v3/).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**It basically:**
+* Login with GitHub
+* Fetch repositories based in the user logged
 
-## Build
+![Image](https://imgur.com/i9EnOhK.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+![Image](https://imgur.com/QKbQwjf.png)
 
-## Running unit tests
+## Install
+- Clone the project: `git clone git@github.com:joaocarvalhowd/repository-list.git`
+- (Optional - Because the callback of Github is configured to [DEMO API](http://banco-pan-auth.joaocarvalhowd.com.br/)) Clone the project of auth: `git clone git@github.com:joaocarvalhowd/repository-list-auth.git`
+- Go to project's folder: `cd repository-list`
+- Install dependencies: `npm i` or `yarn`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
+To see this project running locally:
+- Execute `npm run start` or `yarn start`
+- Access [localhost:4200](http://localhost:4200)
 
-## Running end-to-end tests
+## Tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Some unit test has been created:
 
-## Further help
+- repository-list
+- repository-item
+- header
+- _services/token
+- _services/auth
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Execute tests
+
+`npm test` or `yarn test`
+
