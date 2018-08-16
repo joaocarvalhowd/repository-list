@@ -1,3 +1,35 @@
-<p>
-  repository-item works!
-</p>
+<a class="repository-item" target="_blank"
+   href="{{ repository.html_url }}">
+  <h2>{{ repository.name }}</h2>
+  <p>{{ repository.description }}</p>
+
+  <div class="repository-item__counts">
+    <div class="repository-item__counts__item repository-item__counts__item--language" title="Language"
+         *ngIf="repository.language">
+      <i class="material-icons">
+        public
+      </i>
+      <span>
+        {{ repository.language }}
+      </span>
+    </div>
+
+    <div class="repository-item__counts__item repository-item__counts__item--stars" title="Stars">
+      <i class="material-icons">
+        star
+      </i>
+      <span>
+        {{ repository.stargazers_count }}
+      </span>
+    </div>
+
+    <div class="repository-item__counts__item repository-item__counts__item--forks" title="Forks">
+      <i class="material-icons">
+        call_split
+      </i>
+      <span>
+        {{ repository.forks_count }}
+      </span>
+    </div>
+  </div>
+</a>

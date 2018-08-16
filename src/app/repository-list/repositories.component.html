@@ -1,0 +1,10 @@
+<main class="repositories">
+  <app-header></app-header>
+
+  <app-container>
+    <div class="repositories__list">
+      <app-repository-item [repository]="repository" *ngFor="let repository of repositories">
+      </app-repository-item>
+    </div>
+  </app-container>
+</main>

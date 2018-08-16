@@ -1,0 +1,26 @@
+.login {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #345ffd;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  &__button {
+    padding: 15px 20px;
+    border-radius: 45px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all .3s linear;
+    cursor: pointer;
+    font-size: 14px;
+
+    &:hover {
+      background: #fff;
+      color: #345ffd;
+      border: 1px solid #345ffd;
+    }
+  }
+}

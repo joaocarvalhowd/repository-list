@@ -1,0 +1,43 @@
+.header {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+
+  h1 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #6e6e6e;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-auto-rows: 1fr;
+    justify-content: space-between;
+  }
+
+  &__logout {
+    background: #345ffd;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: all .3s linear;
+
+    i {
+      font-size: 18px;
+      margin: 0 5px 0 0;
+    }
+
+    &:hover {
+      background: #345ffd - 10%;
+    }
+  }
+}
