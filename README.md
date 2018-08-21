@@ -1,6 +1,6 @@
 # RepositoryList
 
-> code challenge - [DEMO](http://banco-pan.joaocarvalhowd.com.br/)
+> code challenge
 
 ## Introduction
 
@@ -18,7 +18,7 @@ The application is integrated with [Github API v3](https://developer.github.com/
 
 ## Install
 - Clone the project: `git clone git@github.com:joaocarvalhowd/repository-list.git`
-- (Optional - Because the callback of Github is configured to [DEMO API](http://banco-pan-auth.joaocarvalhowd.com.br/)) Clone the project of auth: `git clone git@github.com:joaocarvalhowd/repository-list-auth.git`
+- Clone the project of auth: `git clone git@github.com:joaocarvalhowd/repository-list-auth.git`
 - Go to project's folder: `cd repository-list`
 - Install dependencies: `npm i` or `yarn`
 
